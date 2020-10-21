@@ -1,0 +1,85 @@
+/* <navigation_bar> */
+ul.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #006064;
+}
+
+ul.nav-bar li {
+  float: left;
+}
+
+ul.nav-bar li a {
+  display: block;
+  color: #E0F7FA;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.nav-bar li a:hover {
+  background-color: #00838F;
+}
+/* </navigation_bar> */
+
+
+body {
+  background-color: #263238;
+  color: #CFD8DC;
+  margin: 0;
+}
+
+
+#welcome-gif {
+  width: 250px;
+  height: 150px;
+  float: left;
+  margin-right: 10px;
+}
+
+
+#catvsmouse-gif {
+  width: 140px;
+  height: 104px;
+  float: left;
+  margin-right: 10px;
+}
+
+
+#sci-card {
+  background-color: #37474F;
+  float: right;
+  margin-left: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+#ava-card {
+  width: 100px;
+  height: 100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.photo {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+td {
+  padding: 15px;
+}
