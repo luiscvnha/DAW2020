@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <keyname></keyname>
+        <title>T2: Definição de tipo de documento (DTD) para Project Records</title>
+        <begindate>2020.10.25</begindate>
+        <enddate>2020.10.27</enddate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <url>http://www.di.uminho.pt/~jcr</url>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member id="a84244">
+            <name>Luís Cunha</name>
+            <email>a84244@alunos.uminho.pt</email>
+            <url>https://github.com/luiscvnha</url>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            O objetivo deste trabalho é criar um
+            <a href="https://en.wikipedia.org/wiki/Document_type_definition"><b>DTD</b></a>
+            que defina a linguagem de anotação em
+            <b><a href="https://en.wikipedia.org/wiki/XML">XML</a></b>
+            do tipo <i>Project Record</i>.
+        </p>
+        <p>Deste modo, conseguimos validar os documentos do tipo Project Record, garantindo que respeitam todas as regras.</p>
+    </abstract>
+    <deliverables>
+        <deliverable url="pr.dtd">Document Type Definition do Project Record</deliverable>
+    </deliverables>
+</pr>
