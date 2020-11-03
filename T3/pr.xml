@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../T2/pr.dtd">
+<pr>
+    <meta>
+        <keyname>DAW2020_T3</keyname>
+        <title>T3: DTD e Stylesheet XSL para o arquivo de Arqueossítios do Noroeste Português</title>
+        <begindate>2020.10.29</begindate>
+        <enddate>2020.11.03</enddate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <url>http://www.di.uminho.pt/~jcr</url>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member id="a84244">
+            <name>Luís Cunha</name>
+            <email>a84244@alunos.uminho.pt</email>
+            <url>https://github.com/luiscvnha</url>
+        </member>
+    </workteam>
+    <abstract>
+        <p>As stylesheets XSL ajudam na visualização da informação contida nos arquivos em XML.</p>
+        <p>Foi criado um DTD para o arquivo de dados, o que ajudou na estruturação da stylesheet XSL.</p>
+        <p>A stylesheet produzida cria um índice de arqueossítios, que redirecionam para a página
+            do arqueossítio em questão, e a partir da qual é possível voltar para a página
+            do índice na posição clicada.</p>
+    </abstract>
+    <deliverables>
+        <deliverable url="arq.dtd">DTD</deliverable>
+        <deliverable url="arqsite.xsl">XSL stylesheet</deliverable>
+    </deliverables>
+</pr>
