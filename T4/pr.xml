@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../pr.dtd">
+<pr>
+    <meta>
+        <key>DAW2020_T4</key>
+        <title>T4: XSL e servidor Node.js para o arquivo de Arqueossítios do Noroeste Português</title>
+        <bdate>novembro 2020</bdate>
+        <edate>novembro 2020</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a84244">
+            <name>Luís Cunha</name>
+            <email>a84244@alunos.uminho.pt</email>
+            <link url="https://github.com/luiscvnha">GitHub</link>
+        </member>
+    </team>
+    <abstract>
+        <p>Foi criada uma stylesheet em XSL que gera uma página html que contém o índice
+            das entradas do arquivo e gera uma página para cada uma das entradas. A navegação
+            entre o índice e as entradas individuais é feita a partir de um url do
+            tipo <u>http://localhost:xxxx</u> ou <u>http://localhost:xxxx/arqs/y</u>, em
+            que xxxx representa a <i>port</i> e y o id do arquivo.</p>
+        <p>De seguida, foi criado um servidor em Node.js que atende a pedidos destes dois
+            tipos. Este servidor utiliza expressões regulares para o <i>pattern matching</i>
+            do url e envia códigos de erro (404) e mensagens de erro para o caso do id do
+            arquivo não existir ou se o url não corresponder a nenhum dos casos válidos.
+            Este servidor mantém também um log de pedidos recebidos na consola do administrador.</p>
+    </abstract>
+    <deliverables>
+        <link url="arqsite.xsl">XSL</link>
+        <link url="server.js">Servidor Node.js</link>
+    </deliverables>
+</pr>
