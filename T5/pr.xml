@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../pr.dtd">
+<pr>
+    <meta>
+        <key>DAW2020_T5</key>
+        <title>T5: Node.js, json-server e geração dinâmica de páginas</title>
+        <bdate>novembro 2020</bdate>
+        <edate>novembro 2020</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a84244">
+            <name>Luís Cunha</name>
+            <email>a84244@alunos.uminho.pt</email>
+            <link url="https://github.com/luiscvnha">GitHub</link>
+        </member>
+    </team>
+    <abstract>
+        <p>Atráves do json-server, é gerado automaticamente um servidor que
+            disponibiliza uma API REST para uma base de dados relativa
+            a uma escola de música.</p>
+        <p>Foi criado um servidor Node.js com o índice dos alunos, cursos e
+            instrumentos, com as respetivas páginas individuais. As páginas são
+            geradas dinamicamente, sendo os dados obtidos a partir do
+            json-server.</p>
+        <p>Este servidor conta também com <u>tratamento de erros</u> e <u>paginação</u>.</p>
+    </abstract>
+    <deliverables>
+        <link url="server.js">Servidor Node.js</link>
+        <link url="_aux.js">Funções auxiliares</link>
+    </deliverables>
+</pr>
