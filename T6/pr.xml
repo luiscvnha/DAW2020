@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../pr.dtd">
+<pr>
+    <meta>
+        <key>DAW2020_T6</key>
+        <title>T6: ToDo List SPA</title>
+        <bdate>novembro 2020</bdate>
+        <edate>novembro 2020</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a84244">
+            <name>Luís Cunha</name>
+            <email>a84244@alunos.uminho.pt</email>
+            <link url="https://github.com/luiscvnha">GitHub</link>
+        </member>
+    </team>
+    <abstract>
+        <p>Este trabalho consiste numa SPA (<i>Single Page Application</i>) para listas de tarefas.
+            Nesta aplicação é possível adicionar, editar e remover tarefas.</p>
+        <p>A página inicial é gerada dinamicamente com as tarefas atuais que são obtidas
+            a partir de um servidor de base de dados (json-server), onde a informação é mantida.</p>
+        <p>Esta aplicação conta com AJAX para toda a lógica da parte do cliente, é aqui que
+            a aplicação comunica com o servidor e modifica a página web, sem haver reloads
+            da página. Conta também com a framework W3 de CSS para tornar a interface
+            mais agradável.</p>
+    </abstract>
+    <deliverables>
+        <link url="server.js">Servidor</link>
+        <link url="util.js">Funções auxiliares</link>
+        <link url="static.js">Funções dedicadas a recursos estáticos</link>
+        <link url="public/client.js">Javascript do lado do cliente</link>
+        <link url="public/favicon.png">Icon</link>
+        <link url="public/w3.css">W3 CSS</link>
+    </deliverables>
+</pr>
