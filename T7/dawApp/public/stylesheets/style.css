@@ -1,0 +1,59 @@
+/* ---------------------- Tabs ---------------------- */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.tab-link {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 50%;
+}
+
+.tab-link:hover {
+    background-color: #777;
+}
+
+.tab-content {
+    display: none;
+    padding: 80px 20px;
+    height: 100%;
+}
+
+/* --------------------- Footer --------------------- */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+/* ---------------------- Form ---------------------- */
+input[type="checkbox"] {
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+form button[type="reset"] {
+    margin-left: 30px;
+}
+
+form button[type="reset"], form button[type="button"] {
+    width: 150px;
+}
+
+/* ---------------------- Table --------------------- */
+img.not, img.ok {
+    margin-left: 5px;
+}
+
+td.button-td, td.button-td button {
+    width: 125px;
+}

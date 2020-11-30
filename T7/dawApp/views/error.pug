@@ -1,0 +1,17 @@
+doctype html
+html(lang='pt')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title Gestão de Alunos - DAW2020
+    link(rel='icon', type="image/png", href='/images/favicon.png')
+    link(rel='stylesheet', href='/stylesheets/w3.css')
+  body
+    .w3-card-4
+      .w3-container.w3-red
+        h2.w3-left Erro
+    h3
+      pre= message
+    h4
+      pre= error.status
+    p
+      pre= error.stack

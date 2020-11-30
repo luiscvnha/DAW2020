@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../pr.dtd">
+<pr>
+    <meta>
+        <key>DAW2020_T7</key>
+        <title>T7: Single-Page Application para Gestão de Alunos</title>
+        <bdate>novembro 2020</bdate>
+        <edate>novembro 2020</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a84244">
+            <name>Luís Cunha</name>
+            <email>a84244@alunos.uminho.pt</email>
+            <link url="https://github.com/luiscvnha">GitHub</link>
+        </member>
+    </team>
+    <abstract>
+        <p>
+            Neste trabalho a persistência dos dados passou a ser garantida por uma base de dados <b>Mongo</b>
+            e a sua construção passou a ser auxiliada pela <i>framework</i> <b>Express.js</b>.
+        </p>
+        <p>
+            Foi desenvolvida uma <i>Single-Page Application</i> usando <b>AJAX</b> para a gestão de alunos, que permite
+            registar um aluno, visualizar a lista de alunos, editar as suas informações e eliminá-los.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="dawApp/bin/www">Ficheiro de arranque</link>
+        <link url="dawApp/app.js">Inicialização da aplicação</link>
+        <link url="dawApp/controllers/student.js">Definição do controller de acesso aos dados</link>
+        <link url="dawApp/models/student.js">Definição do model de aluno</link>
+        <link url="dawApp/routes/index.js">Definição das rotas http</link>
+        <link url="dawApp/views/index.pug">Layout da aplicação</link>
+        <link url="dawApp/views/error.pug">Layout da página de erro</link>
+        <link url="dawApp/common/util.js">Definição de funções auxiliares</link>
+        <link url="dawApp/public/javascripts/client.js">Funções do lado do cliente</link>
+        <link url="dawApp/public/stylesheets/w3.css">Framework W3.CSS</link>
+        <link url="dawApp/public/stylesheets/style.css">Stylesheet adicional</link>
+        <link url="dawApp/public/images/favicon.png">favicon da página</link>
+        <link url="dawApp/public/images/ok.png">Icon de tpc realizado</link>
+        <link url="dawApp/public/images/not.png">Icon de falta de tpc</link>
+    </deliverables>
+</pr>

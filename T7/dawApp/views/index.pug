@@ -1,0 +1,92 @@
+doctype html
+html(lang='pt')
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    title Gestão de Alunos - DAW2020
+    link(rel='icon', type="image/png", href='/images/favicon.png')
+    link(rel='stylesheet', href='/stylesheets/w3.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/client.js')
+
+  body(onload='load()')
+    .w3-card-4
+      .w3-container.w3-teal
+        h2.w3-left Gestão de Alunos - DAW2020
+
+    button#defaultOpen.tab-link(type='button', onclick="openTab('list-tab', this)") Lista de Alunos
+    button.tab-link(type='button', onclick="openTab('reg-tab', this)") Registar um Aluno
+
+    #list-tab.tab-content
+      .w3-container
+        if list.length > 0
+          table.w3-table.w3-striped.w3-bordered.w3-hoverable
+            thead
+              tr
+                th Número
+                th Nome
+                th Git
+                th TPCs
+            tbody#students-table
+              each s in list
+                tr
+                  td= s.numero
+                  td= s.nome
+                  td
+                    a(href=s.git, target='_blank')= s.git
+                  td
+                    each t in s.tpc
+                      if t === 1
+                        img.ok(src='/images/ok.png', alt='1', width='24', height='24')
+                      else
+                        img.not(src='/images/not.png', alt='0', width='24', height='24')
+                  td.button-td
+                    button.w3-button.w3-bar.w3-small.w3-padding-small.w3-round-xlarge.w3-green.w3-hover-pale-green(type='button',
+                      onclick="edit('"+s.numero+"',this.parentNode.parentNode)")
+                      | Editar
+                  td.button-td
+                    button.w3-button.w3-bar.w3-small.w3-padding-small.w3-round-xlarge.w3-red.w3-hover-pale-red(type='button',
+                      onclick="remove('"+s.numero+"',this.parentNode.parentNode)")
+                      | Remover
+        else
+          p Não há alunos...
+
+    #reg-tab.tab-content
+      .w3-container
+        form
+          label.w3-text-green(for='number-input')
+            b Número:
+          input#number-input.w3-input.w3-border.w3-light-grey(type='text')
+          br
+          label.w3-text-green(for='name-input')
+            b Nome:
+          input#name-input.w3-input.w3-border.w3-light-grey(type='text')
+          br
+          label.w3-text-green(for='git-input')
+            b Git:
+          input#git-input.w3-input.w3-border.w3-light-grey(type='text')
+          br
+          label.w3-text-green
+            b TPCs:
+          input#tpc-input-1(type='checkbox')
+          | 1
+          input#tpc-input-2(type='checkbox')
+          | 2
+          input#tpc-input-3(type='checkbox')
+          | 3
+          input#tpc-input-4(type='checkbox')
+          | 4
+          input#tpc-input-5(type='checkbox')
+          | 5
+          input#tpc-input-6(type='checkbox')
+          | 6
+          input#tpc-input-7(type='checkbox')
+          | 7
+          input#tpc-input-8(type='checkbox')
+          | 8
+          br
+          br
+          button.w3-button.w3-round-xlarge.w3-green.w3-hover-pale-green(type='button', onclick='add()') Adicionar
+          button.w3-button.w3-round-xlarge.w3-red.w3-hover-pale-red(type='reset') Limpar
+
+    footer.w3-container.w3-teal
+      address Gerado por dawApp :: #{date}, lpc
