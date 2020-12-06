@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "../pr.dtd">
+<pr>
+    <meta>
+        <key>DAW2020_T8</key>
+        <title>T8: Formulários dinâmicos e upload de vários ficheiros</title>
+        <bdate>dezembro 2020</bdate>
+        <edate>dezembro 2020</edate>
+        <supervisor url="http://www.di.uminho.pt/~jcr">José Carlos Ramalho</supervisor>
+    </meta>
+    <team>
+        <member id="a84244">
+            <name>Luís Cunha</name>
+            <email>a84244@alunos.uminho.pt</email>
+            <link url="https://github.com/luiscvnha">GitHub</link>
+        </member>
+    </team>
+    <abstract>
+        <p>
+            Neste trabalho foi implementado um formulário dinâmico que permite fazer o <i>upload</i>
+            de mais que um ficheiro. Para tal, foi adicionado <b>Javascript</b> do lado do cliente
+            que permite a expansão do formulário.
+        </p>
+        <p>
+            Do lado do servidor, a função que trata o <i>upload</i> de ficheiros foi alterada de forma
+            a responder tanto ao upload de um só ficheiro, como de vários.
+        </p>
+    </abstract>
+    <deliverables>
+        <link url="server.js">Servidor</link>
+        <link url="html-templates.js">Templates HTML para as páginas</link>
+        <link url="dbFiles.json">Base de dados de imagens</link>
+        <link url="public/form.js">Javascript para o formulário dinâmico</link>
+        <link url="public/imagens.js">Javascript para visualização e download das imagens</link>
+        <link url="public/jquery-3.5.1.min.js">Biblioteca JQuery</link>
+    </deliverables>
+</pr>
